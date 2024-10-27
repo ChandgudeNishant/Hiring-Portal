@@ -1,0 +1,208 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #00C9FF, #92FE9D);
+}
+
+.container.glass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container.glass input,
+.container.glass textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+.container.glass button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+.container.glass .btn-secondary {
+  background: linear-gradient(45deg, #00b4db, #0083b0);
+  color: white;
+}
+
+.container.glass .btn-secondary:hover {
+  background: linear-gradient(45deg, #0083b0, #00b4db);
+}
+
+h2, h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p, label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.timer, .countdown {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.candidate-form-container {
+  width: 90%;
+  max-width: 600px; 
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 20px;
+}
+
+.video-recording-container {
+  width: 100%;
+  max-width: 700px; 
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 20px;
+}
+
+.review-page-container {
+  padding-bottom: 40px; /* Extra bottom padding for ReviewPage */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 20px;
+}
+.btn-primary {
+  background-color: #4A90E2; /* Softer blue for glassmorphic background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #357ABD;
+}
+
+.btn-danger {
+  background-color: #E74C3C; /* Softer red for Stop button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #C0392B;
+}
+
+.btn-success {
+  background-color: #27AE60; /* Green for Upload button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Add space between Upload and Retake */
+}
+
+.btn-success:hover {
+  background-color: #229954;
+}
+
+.btn-secondary {
+  background-color: #7F8C8D; /* Neutral color for Retake button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #707B7C;
+}
+
+.video-recording-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.review-page-container video {
+  margin-bottom: 20px; /* Add space between video and bottom of container */
+}
+
+.resume-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between "Resume:" text and download button */
+  margin-top: 15px; /* Space above the resume section */
+  margin-bottom: 20px; /* Space below the resume section, if needed */
+}
+
+.container.glass button {
+  width: auto; /* Change to auto for proper spacing */
+  padding: 10px 20px; /* Maintain button padding */
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  margin: 0; 
+}
